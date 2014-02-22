@@ -81,5 +81,8 @@ int main(void)
 __interrupt void Timer_B (void)
 {
   P1OUT ^= 0x01;                            // Toggle P1.0 using exclusive-OR
+ __delay_cycles(10000);
+P1OUT ^= 0x01; 
+
 }
 
